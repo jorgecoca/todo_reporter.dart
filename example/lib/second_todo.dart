@@ -1,5 +1,7 @@
 import 'package:todo_reporter/todo_reporter.dart';
 
+part "second_todo.g.dart";
+
 @Todo('Second todo to be implemented')
 class SecondTodo {}
 
