@@ -4,28 +4,21 @@
 
 Tool that generates a report with all the TODO annotations found in your Dart code.
 
-## License
+## Updated September 2020
 
-```
-MIT License
+Pubspec fixes:
 
-Copyright (c) 2019 Jorge Coca
+* Updated minimum Dart version to 2.7.0
+* Updated all parts to latest available version w/ one exception (build system error)
+* Pinned the ```analyzer``` version to avoid build error (should be removable w/ Dart 2.10)
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Removed Flutter wrapper on the example (simplifies build).
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Added [mono_repo](https://pub.dev/packages/mono_repo) YAML files to simplify package management.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
+## Building and running
+
+1. Install ```mono_repo```
+2. Use it to run ```pub get``` for all subprojects
+3. ```cd example```
+4. ```pub run build_runner build --delete-conflicting-outputs```
