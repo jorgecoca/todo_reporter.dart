@@ -1,6 +1,6 @@
 class Todo {
   final String name;
-  final String todoUrl;
+  final String? todoUrl;
 
-  const Todo(this.name, {this.todoUrl}) : assert(name != null);
+  const Todo(this.name, {this.todoUrl});
 }
